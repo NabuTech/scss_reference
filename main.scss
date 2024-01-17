@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'typography';
+@import 'layout';
+
+
+// Styles
+body {
+    font-family: $main-font;
+    background-color: $background-color;
+    margin: 0;
+}
+
+header {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+
+    p {
+        font-size: $base-font-size;
+        line-height: $paragraph-line-height;
+    }
+
+    .box {
+        background-color: $secondary-color;
+        color: #fff;
+        border: $box-border;
+        border-radius: $box-border-radius;
+        padding: 20px;
+        margin-top: 20px;
+
+        p {
+            font-size: $paragraph-size;
+            margin: 0;
+        }
+    }
+}

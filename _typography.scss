@@ -1,0 +1,39 @@
+// Typography Styles
+
+// Heading Styles
+h1 {
+    font-size: $heading1-size;
+    line-height: $heading-line-height;
+    font-family: $heading-font;
+    color: $background-color;
+}
+
+h2 {
+    font-size: $heading2-size;
+    line-height: $heading-line-height;
+    font-family: $heading-font;
+    color: $secondary-color;
+}
+
+// Paragraph Styles
+p {
+    font-size: $paragraph-size;
+    line-height: $paragraph-line-height;
+    font-family: $main-font;
+    color: #666;
+}
+
+li {
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: $main-font;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+strong {
+    font-weight: bold;
+    color: black;
+}
+
+// Additional Styles for Specific Elements or Components Can Be Added as Needed

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Layout SCSS Explanation</title>
+</head>
+<body>
+    <header>
+        <h1>Understanding Layout SCSS</h1>
+    </header>
+    
+    <section class="content">
+        <p>This page provides an explanation of the layout SCSS used in our project.</p>
+        
+        <div class="explanation">
+            <h2>Key Components of Layout SCSS</h2>
+            <ul>
+                <li><strong>Container:</strong> The <code>.container</code> class sets a maximum width and centers the layout.</li>
+                <li><strong>Header:</strong> The <code>header</code> element includes styles for the page header.</li>
+                <li><strong>Main Content and Sidebar:</strong> The <code>.content</code> class utilizes flexbox to structure the main content and sidebar.</li>
+                <li><strong>Sidebar:</strong> The <code>.sidebar</code> class defines styles for the sidebar, including width, padding, and background color.</li>
+                <li><strong>Main Content:</strong> The <code>.main-content</code> class styles the main content area within the flex container.</li>
+                <li><strong>Footer:</strong> The <code>footer</code> element includes styles for the page footer.</li>
+                <li><strong>Responsive Design:</strong> The <code>@media</code> query adjusts the layout for screens with a maximum width of 768px.</li>
+            </ul>
+
+            <h2>How to Use This Layout SCSS</h2>
+            <p>To apply these styles to your project, include the <code>_layout.scss</code> file in your SCSS project and compile it into CSS. Then, link the resulting CSS file in your HTML pages. You can customize the styles to suit the design requirements of your project.</p>
+        </div>
+    </section>
+    
+    <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content.</p>
+        </aside>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Layout Example</p>
+    </footer>
+</body>
+</html>

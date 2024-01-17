@@ -1,0 +1,50 @@
+// Vendor Prefix Mixin
+@mixin vendor-prefix($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+// Flex Box Shadow Mixin
+@mixin flex-box-shadow($x, $y, $blur, $color) {
+    @include vendor-prefix(box-shadow, #{$x}px #{$y}px #{$blur}px $color);
+}
+
+// Transition Mixin
+@mixin transition($property, $duration) {
+    transition: $property $duration ease-in-out;
+}
+
+// Flex Container Mixin
+@mixin flex-container($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// Flex Item Mixin
+@mixin flex-item($flex: 1) {
+    flex: $flex;
+}
+
+// Media Query Mixin
+@mixin media-query($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+// Placeholder Styles Mixin
+@mixin placeholder-styles {
+    &::placeholder {
+        color: #999;
+    }
+}
+
+// Gradient Background Mixin
+@mixin gradient-background($start-color, $end-color) {
+    background: linear-gradient(to right, $start-color, $end-color);
+}

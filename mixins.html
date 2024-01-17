@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>SCSS Mixins Example</title>
+</head>
+<body>
+    <header>
+        <h1>Exploring SCSS Mixins</h1>
+    </header>
+    
+    <section class="content">
+        <p>This is an example illustrating the use of mixins in SCSS.</p>
+        
+        <div class="box">
+            <p>Mixed Box with Flexible Box-Shadow</p>
+        </div>
+
+        <div class="explanation">
+            <h2>Understanding SCSS Mixins</h2>
+            <p>Mixins are reusable pieces of code that can be included in other styles. They allow you to define a set of styles once and reuse them throughout your stylesheets.</p>
+
+            <h2>What We've Done in This Example</h2>
+            <p>In our SCSS file (<code>_mixins.scss</code>), we have defined mixins for vendor prefixes and a flexible box-shadow. These mixins are then used to apply styles to our HTML elements.</p>
+
+            <h2>Mixin Examples</h2>
+            <ul>
+                <li><strong>Vendor Prefix Mixin:</strong> <code>@include vendor-prefix(box-sizing, border-box);</code></li>
+                <li><strong>Box-Shadow Mixin:</strong> <code>@include flex-box-shadow(3px, 3px, 6px, rgba(0, 0, 0, 0.1));</code></li>
+            </ul>
+
+            <h2>Additional Mixin Examples</h2>
+            <ul>
+                <li><strong>Transition Mixin:</strong> <code>@include transition(all 0.3s);</code></li>
+                <li><strong>Flex Container Mixin:</strong> <code>@include flex-container(row, space-around, center);</code></li>
+                <li><strong>Flex Item Mixin:</strong> <code>@include flex-item(2);</code></li>
+                <li><strong>Media Query Mixin:</strong> <code>@include media-query(600px) { /* styles */ }</code></li>
+                <li><strong>Placeholder Styles Mixin:</strong> <code>@include placeholder-styles;</code></li>
+                <li><strong>Gradient Background Mixin:</strong> <code>@include gradient-background(#3498db, #2ecc71);</code></li>
+            </ul>
+
+            <p>Feel free to experiment with these mixins and observe how they simplify the application of styles.</p>
+        </div>
+    </section>
+</body>
+</html>

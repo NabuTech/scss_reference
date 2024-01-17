@@ -1,0 +1,60 @@
+// Layout Styles
+
+// Container Styles
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// Header Styles
+header {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+// Main Content and Sidebar Layout
+.content {
+    display: flex;
+}
+
+// Sidebar Styles
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: $secondary-color;
+    color: #fff;
+
+    h2 {
+        color: white;
+    }
+}
+
+// Main Content Styles
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: $background-color;
+}
+
+// Footer Styles
+footer {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    p {
+        color: black;
+    }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    // Adjust styles for smaller screens
+    .sidebar {
+        width: 100%;
+    }
+}
+
